@@ -1,0 +1,7 @@
+--- # Kaamos Black TOH definition
+vendor_id: 1
+product_id: 2
+vendor_name: "Jolla Mobile Ltd"
+product_name: "Kaamos Black TOH"
+vendor_website: "https://jolla.com"
+ambience: "Kaamos Black"

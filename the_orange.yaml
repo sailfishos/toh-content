@@ -1,0 +1,7 @@
+--- # The Orange TOH definition
+vendor_id: 1
+product_id: 3
+vendor_name: "Jolla Mobile Ltd"
+product_name: "The Orange TOH"
+vendor_website: "https://jolla.com"
+ambience: "The Orange"
