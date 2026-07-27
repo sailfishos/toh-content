@@ -1,0 +1,12 @@
+--- # The Orange TOH
+override:
+  ambience: file:///usr/share/ambience/ruska/ruska.ambience
+
+user-unit:
+  description: Set The Orange Ambience
+  type: transient-service
+  service-type: oneshot
+  service-name: set-ambience-to-ruska
+  service-exec:
+    - "/usr/libexec/change_ambience.sh"
+    - "file:///usr/share/ambience/ruska/ruska.ambience"

@@ -1,0 +1,12 @@
+--- # Snow White TOH
+override:
+  ambience: file:///usr/share/ambience/snow-white/snow-white.ambience
+
+user-unit:
+  description: Set Snow White Ambience
+  type: transient-service
+  service-type: oneshot
+  service-name: set-ambience-to-snow-white
+  service-exec:
+    - "/usr/libexec/change_ambience.sh"
+    - "file:///usr/share/ambience/snow-white/snow-white.ambience"

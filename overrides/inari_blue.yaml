@@ -1,0 +1,12 @@
+--- # Inari Blue TOH
+override:
+  ambience: file:///usr/share/ambience/inari-blue/inari-blue.ambience
+
+user-unit:
+  description: Set Inari Blue Ambience
+  type: transient-service
+  service-type: oneshot
+  service-name: set-ambience-to-inari-blue
+  service-exec:
+    - "/usr/libexec/change_ambience.sh"
+    - "file:///usr/share/ambience/inari-blue/inari-blue.ambience"
