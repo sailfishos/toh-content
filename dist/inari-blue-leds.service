@@ -1,0 +1,9 @@
+# Uses blinker example from symbiosis for breathing effect
+[Unit]
+Description=Breathing effect
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/usr/bin/invoker --type=generic --wait-term /usr/bin/blinker breathing
+ExecStop=-/usr/bin/invoker --type=generic --wait-term /usr/bin/blinker off

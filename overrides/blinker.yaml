@@ -1,0 +1,4 @@
+--- # Breathing effect for LEDs of Inari Blue
+user-unit:
+  type: service
+  service-name: inari-blue-leds.service
