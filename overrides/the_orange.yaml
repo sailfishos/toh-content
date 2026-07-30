@@ -10,3 +10,4 @@ user-unit:
   service-exec:
     - "/usr/libexec/change_ambience.sh"
     - "file:///usr/share/ambience/ruska/ruska.ambience"
+  run-on-start: false
