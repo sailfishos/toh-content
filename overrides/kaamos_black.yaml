@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Jolla Mobile Ltd
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
 --- # Kaamos Black TOH
 override:
   ambience: file:///usr/share/ambience/kaamos-black/kaamos-black.ambience
