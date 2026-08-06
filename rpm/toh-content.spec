@@ -27,14 +27,14 @@ systemctl-user daemon-reload || :
 systemctl-user daemon-reload || :
 
 %install
-install -D -m0755 dist/change_ambience.sh %{buildroot}%{_libexecdir}/change_ambience.sh
+install -D -m0644 configs/blinker.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0004/blinker.yaml
+install -D -m0644 configs/inari_blue.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0004/inari_blue.yaml
+install -D -m0644 configs/kaamos_black.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0002/kaamos_black.yaml
+install -D -m0644 configs/snow_white.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0003/snow_white.yaml
+install -D -m0644 configs/the_orange.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0001/the_orange.yaml
 install -D -m0644 dist/inari-blue-leds.privileges %{buildroot}%{_datadir}/mapplauncherd/privileges.d/inari-blue-leds.privileges
 install -D -m0644 dist/inari-blue-leds.service %{buildroot}/usr/lib/systemd/user/inari-blue-leds.service
-install -D -m0644 overrides/blinker.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0004/blinker.yaml
-install -D -m0644 overrides/inari_blue.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0004/inari_blue.yaml
-install -D -m0644 overrides/kaamos_black.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0002/kaamos_black.yaml
-install -D -m0644 overrides/snow_white.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0003/snow_white.yaml
-install -D -m0644 overrides/the_orange.yaml %{buildroot}%{_datadir}/tohd-1/tohs/0001/0001/the_orange.yaml
+install -D -m0755 dist/change_ambience.sh %{buildroot}%{_libexecdir}/change_ambience.sh
 
 %files
 %license LICENSES/BSD-3-Clause.txt
