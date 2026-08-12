@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 --- # Breathing effect for LEDs of Inari Blue
+access:
+  i2c-dev: ["/usr/bin/blinker"]
 user-unit:
   type: service
   service-name: inari-blue-leds.service
