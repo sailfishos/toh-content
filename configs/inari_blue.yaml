@@ -12,6 +12,6 @@ user-unit:
   service-type: oneshot
   service-name: set-ambience-to-inari-blue
   service-exec:
-    - "/usr/libexec/change_ambience.sh"
+    - "/usr/libexec/jolla-toh-configs/change_ambience.sh"
     - "file:///usr/share/ambience/inari-blue/inari-blue.ambience"
   run-on-start: false

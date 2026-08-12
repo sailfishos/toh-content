@@ -12,6 +12,6 @@ user-unit:
   service-type: oneshot
   service-name: set-ambience-to-kaamos-black
   service-exec:
-    - "/usr/libexec/change_ambience.sh"
+    - "/usr/libexec/jolla-toh-configs/change_ambience.sh"
     - "file:///usr/share/ambience/kaamos-black/kaamos-black.ambience"
   run-on-start: false
