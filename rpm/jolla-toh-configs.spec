@@ -9,6 +9,7 @@ Summary: Official Jolla TOH configurations
 License: BSD-3-Clause
 URL:     https://github.com/sailfishos/toh-content
 Source0: %{name}-%{version}.tar.bz2
+BuildArch: noarch
 Requires: symbiosis-examples-blinker
 
 %description
