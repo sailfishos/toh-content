@@ -1,0 +1,15 @@
+{
+    "translation_catalog": "jolla-toh-configs",
+    "entries": [
+        {
+            "path": "system_settings/look_and_feel/topmenu/inari_blue/enable_switch",
+            "type": "custom",
+            "translation_id": "jolla-toh-configs-la-inari_blue",
+            "icon": "image://theme/icon-m-jolla",
+            "params": {
+                "source": "/usr/share/jolla-settings/pages/inari_blue/EnableSwitch.qml",
+                "type": "grid"
+            }
+        }
+    ]
+}
